@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-color: rgb(255, 255, 255);
+}
+
+.aclock {
+  width: 40vw;
+  height: 40vw;
+  background-color: rgb(138, 137, 142);
+  border-radius: 50%;
+  border: 8px solid #290075;
+  position: relative;
+}
+
+.aclock_hour,
+.aclock_min,
+.aclock_sec {
+  width: 1%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transform-origin: bottom;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.pin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1em;
+  height: 1em;
+  background: rgb(0, 0, 0);
+  border: 2px solid #ffffff;
+  border-radius: 10em;
+  margin: auto;
+  z-index: 10;
+}
+
+.aclock_hour {
+  height: 25%;
+  width: 10px;
+  background-color: #010f6ddc;
+  border: 1px solid #fffd74;
+}
+
+.aclock_min {
+  height: 30%;
+  width: 6px;
+  background-color: #744600;
+  border: 1px solid #fffd74;
+}
+
+.aclock_sec {
+  height: 50%;
+  width: 3px;
+  background-color: #4a006d;
+  transform-origin: 50% 85%;
+  border: 1px solid #fffd74;
+}
+
+.number {
+  position: absolute;
+  color: black;
+}
