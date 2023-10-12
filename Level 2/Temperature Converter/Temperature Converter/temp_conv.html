@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Temperature Converter - Code Casa</title>
+    <link rel="stylesheet" href="temp-conv.css" />
+</head>
+
+<body>
+    <div class="temp-head">
+        <h2>TEMPERATURE CONVERTER</h2>
+    </div>
+    <div class="temp-box">
+        <div class="temp-value">
+            <p>Temperature degrees conversions of Fahrenheit (°F), </br> Celcius (°C), Kelvin (K)</p>
+            <input id="temp" type="number" placeholder="Enter degrees">
+        </div>
+        <div class="select-temp">
+            <div>
+                <h4 for="fromunit">From Temperature</h4>
+                <select id="fromunit">
+                    <option disabled selected>Select Temperature</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div>
+                <h4 for="tounit">To Temperature</h4>
+                <select id="tounit">
+                    <option disabled selected>Select Temperature</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" onclick="convertTemperature()">Convert</button>
+        <div class="result-box">
+            <p id="result">RESULT</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="col d-flex">
+            <p>Copyright @sonav09</p>
+        </div>
+    </footer>
+    <script src="temp-conv.js"></script>
+</body>
+
+</html>
